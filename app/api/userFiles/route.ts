@@ -10,7 +10,7 @@ export async function POST(req: Request, res: NextApiResponse) {
     });
   }
 
-  const result = await fetch(`$(process.env.NEXT_PUBLIC_AWS_API_URL)/getUserFiles`, {
+  const result = await fetch(`${process.env.NEXT_PUBLIC_AWS_API_URL}/getUserFiles`, {
     method: "POST",
     mode: "no-cors",
     headers: {
